@@ -1,8 +1,9 @@
 # Donut
-Donut using DVC and FastAPI
+Donut using DVC and Flask
 
 ## Create Virtual Environment and install libraries
-- python3.9 -m venv ../.venvs/donut
+- python3.10 -m venv ../.venvs/donut
 - source ../.venvs/donut/bin/activate
-- pip install transformers[torch] # this is for CPU support only, otherwise pip install transformers
-- 
+- pip install transformers # for CPU support only, pip install transformers[torch]
+- pip install sentencepiece
+- pip install protobuf==3.20.1
