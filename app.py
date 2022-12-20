@@ -38,10 +38,8 @@ def response():
         else:
             return "No selected file - extension must be png or jpg - Shape of the image could not be handled."
     image = Image.open(os.path.join(app.config["UPLOAD_FOLDER"], filename))
-    print(f"image: {type(image)} size: {image.size}")
     outputs, processor = processor_model(model_, task_prompt_, image)
     response = sequence_processor(outputs, processor)
-    print(f"response: \n {response}")
     return response
 
 

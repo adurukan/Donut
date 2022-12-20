@@ -7,3 +7,9 @@ Donut using DVC and Flask
 - pip install transformers # for CPU support only, pip install transformers[torch]
 - pip install sentencepiece
 - pip install protobuf==3.20.1
+
+
+## Resources
+- https://huggingface.co/docs/transformers/v4.25.1/en/model_doc/donut#overview
+- https://github.com/clovaai/donut
+- https://huggingface.co/datasets/naver-clova-ix/cord-v2
